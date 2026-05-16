@@ -1,0 +1,45 @@
+{
+    "name": "stylelint-plugin-simbiat",
+    "version": "1.0.0",
+    "description": "Custom Stylelint rules used in simbiat.eu project: require-attribute-i-flag.",
+    "author": {
+        "name": "Dmitrii Kustov",
+        "email": "upport@simbiat.eu",
+        "url": "https://www.simbiat.eu"
+    },
+    "type": "module",
+    "exports": {
+        "default": "./lib/Plugin.js"
+    },
+    "files": [
+        "lib/"
+    ],
+    "engines": {
+        "node": "^20.10.0 || >=21.0.0"
+    },
+    "peerDependencies": {
+        "stylelint": ">=14.0.0"
+    },
+    "dependencies": {
+        "postcss-selector-parser": ">=6.0.0"
+    },
+    "keywords": [
+        "css",
+        "css lint",
+        "lint",
+        "linter",
+        "stylelint",
+        "stylelint-plugin",
+        "attribute-selector",
+        "attribute flag",
+        "case insensitive"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/simbiat/stylelint-plugin-simbiat.git"
+    },
+    "bugs": {
+        "url": "https://github.com/simbiat/stylelint-plugin-simbiat/issues"
+    }
+}
