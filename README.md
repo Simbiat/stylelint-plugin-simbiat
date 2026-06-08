@@ -5,7 +5,7 @@ Custom Stylelint rules that are used in the [simbiat.eu](https://github.com/Simb
 ## Installation
 
 ```bash
-npm install --save-dev stylelint-plugin-simbiat
+npm install --save-dev @simbiat/stylelint-plugin-simbiat
 ```
 
 Requires ESLint

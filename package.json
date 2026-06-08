@@ -1,5 +1,5 @@
 {
-    "name": "stylelint-plugin-simbiat",
+    "name": "@simbiat/stylelint-plugin-simbiat",
     "version": "1.0.0",
     "description": "Custom Stylelint rules used in simbiat.eu project: require-attribute-i-flag.",
     "author": {
@@ -8,11 +8,22 @@
         "url": "https://www.simbiat.eu"
     },
     "type": "module",
+    "main": "./dist/Plugin.mjs",
+    "module": "./dist/Plugin.mjs",
+    "types": "./dist/Plugin.d.mts",
     "exports": {
-        "default": "./lib/Plugin.js"
+        ".": {
+            "default": "./dist/Plugin.mjs",
+            "import": "./dist/Plugin.mjs",
+            "types": "./dist/Plugin.d.mts"
+        },
+        "./package.json": "./package.json"
     },
     "files": [
-        "lib/"
+        "dist",
+        "LICENSE",
+        "package.json",
+        "README.md"
     ],
     "engines": {
         "node": "^20.10.0 || >=21.0.0"
@@ -41,5 +52,8 @@
     },
     "bugs": {
         "url": "https://github.com/simbiat/stylelint-plugin-simbiat/issues"
+    },
+    "scripts": {
+        "prepare": "tsc"
     }
 }
