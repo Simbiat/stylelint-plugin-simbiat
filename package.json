@@ -1,39 +1,7 @@
 {
     "name": "@simbiat/stylelint-plugin-simbiat",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Custom Stylelint rules used in simbiat.eu project: require-attribute-i-flag.",
-    "author": {
-        "name": "Dmitrii Kustov",
-        "email": "upport@simbiat.eu",
-        "url": "https://www.simbiat.eu"
-    },
-    "type": "module",
-    "main": "./dist/Plugin.mjs",
-    "module": "./dist/Plugin.mjs",
-    "types": "./dist/Plugin.d.mts",
-    "exports": {
-        ".": {
-            "default": "./dist/Plugin.mjs",
-            "import": "./dist/Plugin.mjs",
-            "types": "./dist/Plugin.d.mts"
-        },
-        "./package.json": "./package.json"
-    },
-    "files": [
-        "dist",
-        "LICENSE",
-        "package.json",
-        "README.md"
-    ],
-    "engines": {
-        "node": "^20.10.0 || >=21.0.0"
-    },
-    "peerDependencies": {
-        "stylelint": ">=14.0.0"
-    },
-    "dependencies": {
-        "postcss-selector-parser": ">=6.0.0"
-    },
     "keywords": [
         "css",
         "css lint",
@@ -45,15 +13,48 @@
         "attribute flag",
         "case insensitive"
     ],
-    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/simbiat/stylelint-plugin-simbiat/issues"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/simbiat/stylelint-plugin-simbiat.git"
     },
-    "bugs": {
-        "url": "https://github.com/simbiat/stylelint-plugin-simbiat/issues"
+    "license": "MIT",
+    "author": {
+        "name": "Dmitrii Kustov",
+        "email": "upport@simbiat.eu",
+        "url": "https://www.simbiat.eu"
     },
+    "sideEffects": false,
+    "type": "module",
+    "exports": {
+        ".": {
+            "default": "./dist/Plugin.mjs",
+            "import": "./dist/Plugin.mjs",
+            "types": "./dist/Plugin.d.mts"
+        },
+        "./package.json": "./package.json"
+    },
+    "main": "./dist/Plugin.mjs",
+    "module": "./dist/Plugin.mjs",
+    "types": "./dist/Plugin.d.mts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "prepare": "tsc"
+    },
+    "dependencies": {
+        "postcss-selector-parser": ">=6.0.0"
+    },
+    "devDependencies": {
+        "stylelint": ">=14.0.0"
+    },
+    "peerDependencies": {
+        "stylelint": ">=14.0.0"
+    },
+    "engines": {
+        "node": "^20.10.0 || >=21.0.0"
     }
 }
