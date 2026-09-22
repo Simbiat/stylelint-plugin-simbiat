@@ -1,6 +1,6 @@
 {
     "name": "@simbiat/stylelint-plugin-simbiat",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Custom Stylelint rules used in simbiat.eu project: require-attribute-i-flag.",
     "keywords": [
         "css",
@@ -23,7 +23,7 @@
     "license": "MIT",
     "author": {
         "name": "Dmitrii Kustov",
-        "email": "upport@simbiat.eu",
+        "email": "support@simbiat.eu",
         "url": "https://www.simbiat.eu"
     },
     "sideEffects": false,
